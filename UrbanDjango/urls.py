@@ -14,9 +14,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.urls import path
+from task2.views import func_perf, ClassPerf
 
+# urlpatterns = [
+#     path('', func_template),
+#     path('page1/', class_template),
+# ]
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', func_perf),
+    path('proba/', ClassPerf.as_view()),
 ]
