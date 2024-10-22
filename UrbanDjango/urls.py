@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from task2.views import func_perf, ClassPerf
+from task3.views import func_index, func_index_1, func_index_2
 
 # urlpatterns = [
 #     path('', func_template),
@@ -25,6 +25,7 @@ from task2.views import func_perf, ClassPerf
 # ]
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', func_perf),
-    path('proba/', ClassPerf.as_view()),
+    path('', func_index),
+    path('page_1/', func_index_1),
+    path('page_2/', func_index_2),
 ]
