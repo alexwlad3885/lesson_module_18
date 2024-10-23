@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from task3.views import func_index, func_index_1, func_index_2
+from task4.views import func_index, func_index_1, func_index_2
 
 # urlpatterns = [
 #     path('', func_template),
