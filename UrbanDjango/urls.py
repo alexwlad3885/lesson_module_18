@@ -17,15 +17,17 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from task4.views import func_index, func_index_1, func_index_2
+from task5.views import sign_up_by_django, sign_up_by_html
+
 
 # urlpatterns = [
-#     path('', func_template),
-#     path('page1/', class_template),
+#     path('admin/', admin.site.urls),
+#     path('', func_index),
+#     path('page_1/', func_index_1),
+#     path('page_2/', func_index_2),
 # ]
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', func_index),
-    path('page_1/', func_index_1),
-    path('page_2/', func_index_2),
+    path('', sign_up_by_django),
+    path('django_sign_up/', sign_up_by_html)
 ]
